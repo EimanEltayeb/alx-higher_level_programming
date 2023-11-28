@@ -2,9 +2,9 @@
 def print_last_digit(number):
     if number >= 0:
         x = number % 10
-        print(x)
+        print(x, end="")
         return (x)
     else:
         x = (-1 * number) % 10
-        print(x)
+        print(x, end="")
         return (x)
