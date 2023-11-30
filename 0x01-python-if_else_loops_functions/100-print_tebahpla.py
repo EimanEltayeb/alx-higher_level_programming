@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for n in range(122,95,-1):
+for n in range(122,96,-1):
     if n % 2 == 0:
         char = chr(n)
     else:
