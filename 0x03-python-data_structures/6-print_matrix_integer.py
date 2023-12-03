@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    if matrix == None or len(matrix) == 0:
-        print("\n")
+    if len(matrix[0]) == 0:
+        print("")
     else:
         for i in range(len(matrix)):
             for j in range(len(matrix[i])):
