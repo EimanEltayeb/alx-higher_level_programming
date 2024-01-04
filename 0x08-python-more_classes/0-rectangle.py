@@ -2,6 +2,7 @@
 """square
 """
 
+
 class Rectangle:
     """ Rectangle class
     """
