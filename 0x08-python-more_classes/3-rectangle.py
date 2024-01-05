@@ -61,4 +61,3 @@ class Rectangle:
             if h < self.__height - 1:
                 lisr = lisr + '\n'
         return lisr
-
