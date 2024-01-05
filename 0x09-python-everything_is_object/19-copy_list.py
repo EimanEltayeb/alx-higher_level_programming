@@ -2,5 +2,5 @@
 def copy_list(listt):
     new = []
     for i in range(len(listt)):
-        new[i] = list[i]
+        new.append(listt[i])
     return new
