@@ -55,7 +55,7 @@ class Rectangle:
 
     def __str__(self):
         lisr = ""
-        if if self.__width == 0 or self.__height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
         for h in range(self.__height):
             for w in range(self.__width):
