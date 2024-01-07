@@ -1,0 +1,53 @@
+The ''0-add_integer'' module
+=============================
+
+Using ''add_integer''
+---------------------
+
+Import function from module:
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Test the basic:
+
+	>>> add_integer(1, 1)
+	2
+
+Test one argument:
+
+	>>> add_integer(1)
+	99
+
+Test one number and one string:
+
+	>>> add_integer(1, 'a')
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+
+Test float input:
+
+	>>> add_integer(1, 1.5)
+	2
+
+Test boolian input:
+
+	>>> add_integer(True, 1)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+Test negative values:
+	>>> add_integer(-263, -1)
+	-264
+
+Test string:
+
+>>> add_integer('a', 1)
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+
+Test big numbers:
+
+>>> add_integer(99999999, 999999999)
+1099999998
