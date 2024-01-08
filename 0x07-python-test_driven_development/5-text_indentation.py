@@ -13,7 +13,7 @@ def text_indentation(text):
             print(text[i])
             print("")
             new_line = True
-        elif new_line == True and text[i] == ' ':
+        elif new_line and text[i] == ' ':
             continue
         else:
             print(text[i], end="")
