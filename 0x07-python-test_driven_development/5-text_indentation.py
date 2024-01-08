@@ -3,6 +3,8 @@
 
 
 def text_indentation(text):
+    """ prints a text with 2 new lines after certain characters"""
+
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     for i in range(len(text)):
