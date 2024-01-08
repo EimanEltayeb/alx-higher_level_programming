@@ -18,5 +18,3 @@ def text_indentation(text):
         else:
             print(text[i], end="")
             new_line = False
-    if text[len(text) - 1] not in ('.', '?', ':'):
-        print("")
