@@ -7,12 +7,16 @@ def text_indentation(text):
 
     if not isinstance(text, str):
         raise TypeError("text must be a string")
+    new_line = True
     for i in range(len(text)):
         if text[i] in ('.', '?', ':'):
             print(text[i])
             print("")
+            new_line = True
+        elif new_line == True and text[i] == ' ':
+            continue
         else:
-            if text[i - 1] in ('.', '?', ':') and text[i] == ' ':
-                continue
-            else:
-                print(text[i], end="")
+            print(text[i], end="")
+            new_line = False
+    if text[len(text) - 1] not in ('.', '?', ':'):
+        print("")
