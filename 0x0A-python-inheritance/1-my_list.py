@@ -7,9 +7,11 @@ class MyList(list):
 
     def __init__(self, my_list=[]):
         """initialization"""
+
         self.my_list = my_list
 
     def print_sorted(self):
         """method to print sorted list"""
+
         x = sorted(self)
         print(x)
