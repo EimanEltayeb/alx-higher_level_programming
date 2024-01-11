@@ -24,5 +24,3 @@ class MyInt(int):
         if self.nt != other.nt:
             return True
         return False
-
-
