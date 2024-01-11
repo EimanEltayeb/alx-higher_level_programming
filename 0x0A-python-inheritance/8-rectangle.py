@@ -2,26 +2,8 @@
 """module that creat empty class"""
 
 
-class BaseGeometry:
-    """ BaseGeometry class"""
-
-    def __init__(self):
-        """initialising the class"""
-
-        pass
-
-    def area(self):
-        """area method"""
-
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-        """integer validation method"""
-
-        if not isinstance(value, int) or isinstance(value, bool):
-            raise TypeError(f"{name} must be an integer")
-        if value <= 0:
-            raise ValueError(f"{name} must be greater than 0")
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+"""import BaseGeometry class """
 
 
 class Rectangle(BaseGeometry):
