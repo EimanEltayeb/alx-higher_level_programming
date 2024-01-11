@@ -6,11 +6,11 @@ class BaseGeometry:
     """ BaseGeometry class"""
 
     def __init__(self):
-            """initialising the class"""
+        """initialising the class"""
 
-            pass
+        pass
 
     def area(self):
-            """area method"""
+        """area method"""
 
-            raise Exception("area() is not implemented")
+        raise Exception("area() is not implemented")
