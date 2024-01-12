@@ -72,7 +72,7 @@ class Rectangle(Base):
 
     def area(self):
         return self.__height * self.__width
-    
+
     def display(self):
         for i in range(self.__height):
             for i in range(self.__width):
@@ -83,9 +83,9 @@ class Rectangle(Base):
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
 
     def display(self):
-         for y in range(self.__y):
-             print("")
-         for h in range(self.__height):
+        for y in range(self.__y):
+            print("")
+        for h in range(self.__height):
             print(" " * self.__x, end="")
             for w in range(self.__width):
                 print('#', end="")
@@ -114,5 +114,3 @@ class Rectangle(Base):
                 self.__x = kwargs['x']
             if 'y' in kwargs:
                 self.__y = kwargs['y']
-        
-
