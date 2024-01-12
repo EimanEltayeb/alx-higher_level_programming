@@ -15,12 +15,12 @@ class Square(Rectangle):
 
     @property
     def size(self):
-	return self.__size
+        return self.__size
 
     @size.setter
     def size(self, value):
         self.validate_h_w("width", value)
-	self.__size = value
+        self.__size = value
 
     def __str__(self):
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
