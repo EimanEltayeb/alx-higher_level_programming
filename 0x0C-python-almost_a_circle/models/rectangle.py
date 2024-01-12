@@ -49,3 +49,8 @@ class Rectangle(Base):
     def y(self, value):
         self.__y = value
 
+    def validate_h_w(name, value):
+        if not isinstance(value, int):
+            raise TypeError(f"{name} must be an integer")
+        if value <= 0:
+            raise ValueError(f"{name} must be > 0")
