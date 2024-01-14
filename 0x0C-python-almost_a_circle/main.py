@@ -15,4 +15,4 @@ if __name__ == "__main__":
     r2 = Rectangle(2, 4)
     dictionary2 = r2.to_dictionary()
     json_dictionary2 = Base.to_json_string([dictionary, dictionary2])
-    print(dictionary2)
+    print(json_dictionary2)

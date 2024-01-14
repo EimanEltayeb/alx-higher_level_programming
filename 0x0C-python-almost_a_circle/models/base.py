@@ -27,6 +27,9 @@ class Base:
     
     @staticmethod
     def save_to_file(cls, list_objs):
-        with open("json", "w") as file:
-            file.write(cls.to_json_string(list_objs))
-            
+        dic_list = []
+        for ob in list_objs:
+            dic_list.append(cls.to_json_string(ob.to_dictionary()))
+        print(dic_list)
+        with open(f"{cls.__name__}.json", "w") as file:
+            file.write(str(dic_list))
