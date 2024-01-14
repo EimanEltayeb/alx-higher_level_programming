@@ -32,4 +32,4 @@ class Base:
             dic_list.append(cls.to_json_string(ob.to_dictionary()))
         print(dic_list)
         with open(f"{cls.__name__}.json", "w") as file:
-            file.write(str(dic_list))
+            file.write(dic_list)
