@@ -7,24 +7,16 @@ import unittest
 
 import json
 
-
-from base import __init__
-
-
-from base import to_json_string
-
-
-from base import save_to_file
-
-
-from base import from_json_string, create, load_from_file
-
-
-class Test_base(unittest.TestCase):
+from models.base import Base
+class TestBase(unittest.TestCase):
     """ tests different functions in base file"""
 
+    def test_to_json_string(self):
+        x = {'x': 2, 'width': 10, 'id': 1, 'height': 7, 'y': 8}
+        self.assertEqual(Base.to_json_string(x), '{"x": 2, "width": 10, "id": 1, "height": 7, "y": 8}')
 
-    def test_to_json_string(
+    
 
 
-
+if __name__ == '__main__':
+    unittest.main()
