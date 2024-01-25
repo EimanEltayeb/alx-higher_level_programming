@@ -7,7 +7,7 @@ from math import pi
 class MagicClass:
     """ magic class class"""
 
-    def __init__(self, radius):
+    def __init__(self, radius=0):
         if type(radius) != int and type(radius) != float:
             raise TypeError('radius must be a number')
             self.__radius = radius
