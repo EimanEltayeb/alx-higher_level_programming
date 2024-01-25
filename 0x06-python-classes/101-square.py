@@ -66,8 +66,10 @@ class Square:
                 print("")
 
     def __str__(self):
+        if self.__size == 0:
+            return ""
         y = self.__position[1]
         x = self.__position[0]
         s = self.__size
         f = " " * x + "#" * s
-        return "\n" * y + (f + '\n') * (s - 1) + f 
+        return "\n" * y + (f + '\n') * (s - 1) + f
