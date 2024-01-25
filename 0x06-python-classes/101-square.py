@@ -69,4 +69,4 @@ class Square:
         y = self.__position[1]
         x = self.__position[0]
         s = self.__size
-        return "\n" * y + (" " * x + "#" * s +'\n') * s
+        return "\n" * y + (" " * x + "#" * s + '\n') * s
