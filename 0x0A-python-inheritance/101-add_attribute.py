@@ -3,6 +3,8 @@
 
 
 def add_attribute(clas, att, value):
+    """add attribute"""
+    
     if not hasattr(clas, att):
         setattr(clas, att, value)
     elif getattr(clas, att) != value:
