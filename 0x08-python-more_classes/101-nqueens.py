@@ -12,6 +12,6 @@ n = sys.argv[1]
 if not isinstance(n, int):
     print("N must be a number")
     sys.exit(1)
-elif if n < 4:
+elif n < 4:
     print("N must be at least 4")
     sys.exit(1)
