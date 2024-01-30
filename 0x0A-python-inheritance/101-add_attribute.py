@@ -3,7 +3,7 @@
 
 
 def add_attribute(clas, att, value):
-    if clas.att is None:
-        clas.att = value
-    elif clas.att is not None and clas.att != value:
+    if not hasattr(clas, att):
+        setattr(clas, att, value)
+    elif getattr(clas, att) != value:
         raise TypeError("can't add new attribute")
