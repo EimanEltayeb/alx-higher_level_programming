@@ -1,5 +1,5 @@
 -- cities_by_state_join
-SELECT id, name, name
+SELECT cities.id, cities.name, states.name
 FROM cities 
 	NATURAL JOIN states
-ORDER BY id ASC
+ORDER BY cities.id ASC;
