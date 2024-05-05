@@ -20,9 +20,9 @@ def states_list(us, ps, dab):
         print(f"({id_}, '{name}')")
 
     db.close()
-if __name__ == "__main__":
 
-    
+
+if __name__ == "__main__":
     us = sys.argv[1]
     ps = sys.argv[2]
     dab = sys.argv[3]
