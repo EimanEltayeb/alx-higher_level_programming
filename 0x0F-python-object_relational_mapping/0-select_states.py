@@ -6,11 +6,10 @@ import MySQLdb
 import sys
 
 
-def states_list(us, ps, dab):
+def states_list(u, p, d):
     """states_list"""
 
-    db = MySQLdb.connect(host="localhost", port=3306, 
-    user=us, passwd=ps, db=dab)
+    db = MySQLdb.connect(host="localhost", port=3306, user=u, passwd=p, db=d)
     cur = db.cursor()
     cur.execute("SELECT * FROM states ORDER BY states.id ASC")
     rows = cur.fetchall()
@@ -23,8 +22,8 @@ def states_list(us, ps, dab):
 
 
 if __name__ == "__main__":
-    us = sys.argv[1]
-    ps = sys.argv[2]
-    dab = sys.argv[3]
+    u = sys.argv[1]
+    p = sys.argv[2]
+    d = sys.argv[3]
 
-    states_list(us, ps, dab)
+    states_list(u, p, d)
