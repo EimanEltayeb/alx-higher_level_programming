@@ -6,7 +6,7 @@ import MySQLdb
 import sys
 
 
-def states_list(u, p, d, n):
+def states_list_name(u, p, d, n):
     """states_list"""
 
     db = MySQLdb.connect(host="localhost", port=3306, user=u, passwd=p, db=d)
@@ -28,4 +28,4 @@ if __name__ == "__main__":
     d = sys.argv[3]
     n = sys.argv[4]
 
-    states_list(u, p, d, n)
+    states_list_name(u, p, d, n)
