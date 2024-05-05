@@ -17,7 +17,7 @@ def states_list_name(u, p, d, n):
         id_ = row[0]
         name = row[1]
         if name == n:
-        print(f"({id_}, '{name}')")
+            print(f"({id_}, '{name}')")
 
     db.close()
 
