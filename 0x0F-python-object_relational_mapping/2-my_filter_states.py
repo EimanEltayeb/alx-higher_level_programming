@@ -11,13 +11,12 @@ def states_list_name(u, p, d, n):
 
     db = MySQLdb.connect(host="localhost", port=3306, user=u, passwd=p, db=d)
     cur = db.cursor()
-    cur.execute("SELECT * FROM states ORDER BY states.id ASC")
+    cur.execute("SELECT * FROM states WHERE name={} ORDER BY states.id ASC".format(n)
     rows = cur.fetchall()
     for row in rows:
         id_ = row[0]
         name = row[1]
-        if name == n:
-            print(f"({id_}, '{name}')")
+        print(f"({id_}, '{name}')")
 
     db.close()
 
